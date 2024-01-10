@@ -1,12 +1,37 @@
 extends Camera2D
 
-func _process(_delta):
+var _target_zoom: float = 1.0
+const MIN_ZOOM = 1.0
+const MAX_ZOOM = 3.0
+const ZOOM_INCREMENT = 0.1
+const ZOOM_RATE: float = 8.0
 
-	var zoom_speed = Vector2(0.2, 0.2)
-	var min_zoom = Vector2(1, 1)
-	var max_zoom = Vector2(3, 3)
+func _physics_process(delta: float) -> void:
+	zoom = lerp(
+		zoom,
+		_target_zoom * Vector2.ONE,
+		ZOOM_RATE * delta
+	)
+	set_physics_process(
+		is_equal_approx(zoom.x, _target_zoom)
+	)
 
-	if Input.is_action_just_released("zoom_in"):
-		zoom = clamp(zoom, min_zoom, max_zoom) + zoom_speed
-	elif Input.is_action_just_released("zoom_out"):
-		zoom = clamp(zoom, min_zoom, max_zoom) - zoom_speed
+func zoom_in() -> void:
+	_target_zoom = max(_target_zoom - ZOOM_INCREMENT, MIN_ZOOM)
+	set_physics_process(true)
+
+func zoom_out() -> void:
+	_target_zoom = min(_target_zoom + ZOOM_INCREMENT, MAX_ZOOM)
+	set_physics_process(true)
+
+func _unhandled_input(event: InputEvent) -> void:
+	if event is InputEventMouseMotion:
+		if event.button_mask == MOUSE_BUTTON_MASK_MIDDLE:
+			position -= event.relative * zoom 
+	if event is InputEventMouseButton:
+		if event.is_pressed():
+			if event.button_index == MOUSE_BUTTON_WHEEL_DOWN:
+				zoom_in()
+			if event.button_index == MOUSE_BUTTON_WHEEL_UP:
+				zoom_out()
+		
