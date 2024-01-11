@@ -1,14 +1,21 @@
-[gd_scene load_steps=3 format=3 uid="uid://bsqybq3myg24t"]
+[gd_scene load_steps=4 format=3 uid="uid://bsqybq3myg24t"]
 
 [ext_resource type="Script" path="res://scenes/regiment/regiment.gd" id="1_p8d4j"]
+[ext_resource type="Texture2D" uid="uid://y6bbpdqm658n" path="res://global_assets/infantry_icon.png" id="2_ehrfq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mq8sd"]
-size = Vector2(50, 20)
+size = Vector2(120, 60)
 
 [node name="Regiment" type="Node2D"]
 script = ExtResource("1_p8d4j")
 
 [node name="RegimentArea" type="Area2D" parent="."]
 
+[node name="Sprite2D" type="Sprite2D" parent="RegimentArea"]
+texture = ExtResource("2_ehrfq")
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RegimentArea"]
 shape = SubResource("RectangleShape2D_mq8sd")
+
+[connection signal="body_entered" from="RegimentArea" to="." method="_on_regiment_area_body_entered"]
+[connection signal="input_event" from="RegimentArea" to="." method="_on_regiment_area_input_event"]
