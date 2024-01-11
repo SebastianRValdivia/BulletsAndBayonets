@@ -8,7 +8,6 @@ enum regiment_types {
 @export var regiment_type: regiment_types
 
 var soldiers_count: int = 80
-var target: Vector2
 var soldiers: Array
 var selected: bool = false # If the regiment is selected
 
@@ -33,16 +32,11 @@ func _ready() -> void:
 
 func _input(event) -> void:
 	if event.is_action_pressed("left_click") and selected:
-		target = get_global_mouse_position()
-		selected = false
-
-func _process(_delta):
-	if target:
+		var target = get_global_mouse_position()
 		$RegimentArea.global_position = target
 		for soldier in soldiers:
 			soldier.march_to(target)
-
-
+		selected = false
 
 func _on_regiment_area_body_entered(body):
 	if body.is_in_group("soldiers"):
