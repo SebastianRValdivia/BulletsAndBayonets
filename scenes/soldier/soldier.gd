@@ -12,12 +12,14 @@ func _physics_process(_delta):
 			target_position = (march_to_position - global_position).normalized()
 			velocity = target_position * speed
 			move_and_slide()
+		else:
+			get_in_formation()
 	else:
 		pass
 
 func get_in_formation():
 	# Put soldiers in the firing position
-	in_formation = true
+	global_position = Vector2(global_position.x + formation_pos, global_position.y)
 	
 
 func march_to(location):
