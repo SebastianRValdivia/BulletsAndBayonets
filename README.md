@@ -1,11 +1,14 @@
 # Bullets and bayonets
 
-
 Bullets and bayonets is a real-time strategy game where you are designated as the minister of war and commander in chief of the armed forces of your country. Located in a high tense world where wars are just a shoot away.
 
 ## Mechanics
 
 This game is considered to have two main types of gameplay: battles command and army management. The first refers to the ability to control the flow of an army during battle, giving orders and leading the forces to victory. The second is the large view of the war, where the player must administrate the forces and logistics to won the wars.
+
+### The main character
+
+The game is goes around the main character. A character created and personalized by the player which he will develop the story in the world of 
 
 ### Battle command
 
