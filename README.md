@@ -1,6 +1,6 @@
 # Bullets and bayonets
 
-Bullets and bayonets is a real-time strategy game where you are designated as the minister of war and commander in chief of the armed forces of your country. Located in a high tense world where wars are just a shoot away.
+Bullets and bayonets is a real-time strategy game where you are designated as the marshal of your country, in a high tense world where wars are just a shoot away.
 
 ## Mechanics
 
@@ -24,7 +24,7 @@ Troops are organized in armies. These are large groups of forces managed by 1 ma
 
 #### Marshal
 
-The marshal is the higher ranking officer in the field. When in battle the player takes control over him to direct the forces.
+The marshal is the higher ranking officer in the field. They will lead armies in favor or against you.
 
 ##### Abilities
 
