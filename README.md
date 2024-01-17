@@ -10,6 +10,34 @@ This game is considered to have two main types of gameplay: battles command and 
 
 The game is goes around the main character. A character created and personalized by the player which he will develop the story in the world of 
 
+#### Responsibilities
+
+On the beginning the player is a marshal with an army. He can recruit, train, march, and command only his army. But no sane person would let a successful marshal as a general of only one army.
+
+#### Field marshal
+
+This is when the player becomes officer of all the armies of his country. In here lies the duty of leading his armies to war. 
+
+#### Secretary of war
+
+A secretary of war is the higher military rank in a republic. In him lies the job of manage founds for war, manage the armies and counsel the president.
+
+He has the ability to take at his discretion from the treasure, as long as he doesn't take more than he need. Political favor decay when sources are designated to war and many politicians will dislike this.
+
+#### President
+
+A country utter most position can be given to the player. It does take to win the timed **elections** by having superior political favor over the other candidates... or skip all this and make a **coup**. 
+
+For the next 3 years, with this charge, he is not required to complete any task and he can take from the treasure at will. He also will manage the public work, taxation, the military, and diplomacy with other countries.
+
+##### Elections
+
+A election is hold every 3 years. Whoever has more political favor will become president the next day.
+
+##### Coup
+
+If the player has enough strength he can make a coup. This will lead to low political favor. 
+
 ### Battle command
 
 "Nothing except a battle lost can be half so melancholy as a battle won" - Arthur Wellesley, Duke of Wellington
@@ -37,7 +65,7 @@ These abilities are:
 
 #### Communication 
 
-"The secret of war lies in the communications" - Napoleon Bonaparte
+    "The secret of war lies in the communications" - Napoleon Bonaparte
 
 Combat is a mess. Paths for messengers and systems for communication to officers must be controlled in order to give a new command to a regiment. 
 
@@ -69,13 +97,17 @@ There are several types of roads, with different quality. The better they are th
 
 ### Politics
 
-"War is too serious to be entrusted to generals" - Georges Clemenceau
+    "War is too serious to be entrusted to generals" - Georges Clemenceau
 
 In the game are managed by politicians who can support your troops or not. Gaining favors requires accomplishing missions for them so they can support you and secure their position. With more **political favor** you will have more resources designated for war.
 
 Apart from political favor you can win people favor 
 
 You can also try to make a coup and remove the current president. This process establish you as the de facto president or a new one allowing to gain more resources for war but losing the favor of the people.
+
+### Death
+
+    “Rascals, would you live forever?” - Frederick the Great
 
 ## How to play
 
